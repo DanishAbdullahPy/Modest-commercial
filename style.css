@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    background-color:#080a0d;
+    color: #d4dbd4; 
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  button{
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  .navbar{
+    height: 90px;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 12px;
+  }
+  
+  .menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .menu-links{
+    display: flex;
+    gap:24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+  }
+  
+  .menu-links a{
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+  }
+  
+  .menu-links a:hover{
+    color:white;
+  }
+  
+  .login{
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #38a099;
+    transition: 0.2s;
+  }
+  
+  .login:hover{
+    background-color:#38a099;
+    color: white;
+  }
+  
+  .menu-btn{
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 53rem){
+    .menu{
+      display: none;
+    }
+    .menu-btn{
+      display:block;
+    }
+  }
+  
+  /* heading */
+  
+  /* .brand-name{
+      color: #000;
+      font-size: 48px;
+      font-weight: 500;
+      font-family: Inter;
+      margin-left: 15%;
+      margin-right: 10%;
+  } */
+  h1{
+    font-size: 40px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  
+  .brand-head{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* explore section */
+  
+  
+  
+  
+  
+  
+  /* footer */
+  
+  .social-icons{
+      height: 200px;
+      width: 200px;
+  }
+  
+  .fab{
+      height: 150px;
+      width: 150px;
+  }
+
+
+/* Editing the new release part */
+
+  section {
+    background-color: #232222; /* Set the background color */
+    padding: 20px; /* Add padding around the section */
+    margin-bottom: 20px; /* Add margin at the bottom of the section */
+  }
+  
+  h2 {
+    font-size: 24px; /* Adjust the font size of the heading */
+    color: rgb(255, 255, 255); /* Set the text color */
+    margin-bottom: 10px; /* Add margin at the bottom of the heading */
+  }
+  
+  .gallery {
+    display: flex; /* Use flexbox to create a horizontal gallery */
+    flex-wrap: nowrap; /* Allow the items to wrap to the next line */
+    background: #504e4e;
+    box-shadow: inset;
+    
+
+  }
+  
+  .gallery-item {
+    flex: 0 0 27.33%; /* Adjust the width of the gallery items */
+    padding: 20px; /* Add padding around the gallery items */
+  }
+  
+ 
+  .product-box {
+    border: 2px solid #ccc; /* Set the border style */
+    padding: 10px; /* Add padding inside the box */
+    background-color: #f5f5f5; /* Set the background color of the box */
+  }
+
+
+  .clothing-image {
+    width: 50%; /* Make the images fill the gallery item */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .clothing-image:hover {
+    opacity: 0.6; /* Apply a hover effect */
+  }
+   
+
+  
+
+
+  
+
+  #about-us {
+    background-color: #111111;
+    padding: 10px;
+    margin-block-start: 20px;
+    height: 2;
+    content: inherit;
+    /* Add more styles as needed */
+  }
+
+ 
