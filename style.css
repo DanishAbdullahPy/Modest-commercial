@@ -1,156 +1,134 @@
-
-        /* Additional CSS styles */
-
-        /* Styling for the body */
-        body {
-            font-family: Arial, sans-serif;
-            /* Set the font family */
-            line-height: 1.5;
-            /* Set the line height */
-            margin: 0;
-            /* Remove any default margins */
-            background-color: #54514e;
-            /* Set the background color */
-        }
-
-        /* Styling for the header */
-        header {
-            background-color: rgb(94, 94, 94);
-            /* Set the background color */
-            padding: 20px;
-            /* Add padding */
-            text-align: center;
-            /* Center align the content */
-            color: rgb(73, 66, 66);
-            /* Set the text color */
-        }
-
-        /* Styling for the main heading */
-        h1 {
-
-            font-family: 'Arial', sans-serif;
-            /* Set the font family */
-            font-size: 48px;
-            /* Set the font size */
-            letter-spacing: 2px;
-            /* Add letter spacing */
-            margin: 0;
-            /* Remove any default margins */
-            color: rgb(39, 40, 41);
-            /* Set the text color */
-        }
-
-        /* Styling for paragraphs */
-        p {
-            font-family: 'Helvetica', sans-serif;
-            /* Set the font family */
-            font-size: 18px;
-            /* Set the font size */
-            margin: 10px 0 0;
-            /* Set the margin */
-            color: rgb(32, 33, 33);
-            /* Set the text color */
-        }
-
-        /* Styling for the main content section */
-        main {
-            padding: 20px;
-            /* Add padding */
-            background-color: #453f3f;
-            /* Set the background color */
-            border-radius: 10px;
-            /* Add border radius */
-            margin: 20px;
-            /* Add margin */
-        }
-
-        /* Styling for sections */
-        section {
-            margin-bottom: 20px;
-            /* Add bottom margin */
-        }
-
-        /* Styling for section headings */
-        h2 {
-            font-family: 'Arial', sans-serif;
-            /* Set the font family */
-            font-size: 24px;
-            /* Set the font size */
-            margin: 10px 0;
-            /* Set the margin */
-            color: #333333;
-            /* Set the text color */
-        }
-
-        /* Styling for unordered lists */
-        ul {
-            list-style-type: none;
-            /* Remove default list styles */
-            padding: 0;
-            /* Remove default padding */
-        }
-
-        /* Styling for list items */
-        li {
-            margin-bottom: 5px;
-            /* Add bottom margin */
-        }
-
-        /* Styling for the footer */
-        footer {
-            text-align: center;
-            /* Center align the content */
-            color: #888888;
-            /* Set the text color */
-            margin-top: 20px;
-            /* Add top margin */
-            padding: 20px;
-            /* Add padding */
-            background-color: #312e2e;
-            /* Set the background color */
-        }
-
-        /* Add your custom styles here */
-
-        /* Styling for clothing images */
-        .clothing-image {
-            max-width: 100%;
-            /* Set the maximum width */
-            height: auto;
-            /* Maintain aspect ratio */
-            border-radius: 5px;
-            /* Add border radius */
-            margin-bottom: 10px;
-            /* Add bottom margin */
-        }
-
-        /* Styling for the gallery */
-        .gallery {
-            display: flex;
-            /* Use flexbox for layout */
-            flex-wrap: wrap;
-            /* Allow wrapping */
-            justify-content: space-between;
-            /* Distribute items evenly */
-        }
-
-        /* Styling for gallery items */
-        .gallery-item {
-            flex-basis: 30%;
-            /* Set the basis for flex sizing */
-            margin-bottom: 20px;
-            /* Add bottom margin */
-        }
-
-        /* Styling for social icons */
-        .social-icons {
-            margin-top: 10px;
-            /* Add top margin */
-        }
-
-        /* Styling for social icon links */
-        .social-icons a {
-            margin-right: 5px;
-            /* Add right margin */
-        }
-    
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    background-color:#080a0d;
+    color: #d4dbd4; 
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  button{
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  .navbar{
+    height: 90px;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 12px;
+  }
+  
+  .menu{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .menu-links{
+    display: flex;
+    gap:24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+  }
+  
+  .menu-links a{
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+  }
+  
+  .menu-links a:hover{
+    color:white;
+  }
+  
+  .login{
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #38a099;
+    transition: 0.2s;
+  }
+  
+  .login:hover{
+    background-color:#38a099;
+    color: white;
+  }
+  
+  .menu-btn{
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 53rem){
+    .menu{
+      display: none;
+    }
+    .menu-btn{
+      display:block;
+    }
+  }
+  
+  /* heading */
+  
+  /* .brand-name{
+      color: #000;
+      font-size: 48px;
+      font-weight: 500;
+      font-family: Inter;
+      margin-left: 15%;
+      margin-right: 10%;
+  } */
+  h1{
+    font-size: 40px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  
+  .brand-head{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* explore section */
+  
+  
+  
+  /* footer */
+  
+  .social-icons{
+      height: 200px;
+      width: 200px;
+  }
+  
+  .fab{
+      height: 150px;
+      width: 150px;
+  }
